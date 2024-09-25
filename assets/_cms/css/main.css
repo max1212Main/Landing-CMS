@@ -1,0 +1,376 @@
+/* Do non-sticky footer */
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+.navbar-fixed-bottom {
+	position: absolute!important;
+	bottom: 0;
+}
+
+
+
+/* Floating desktop menu */
+
+.right.nav.navbar-nav {
+	float: left;
+}
+
+
+
+/* Special styles for PayPay button */
+
+.donate-btn {
+	padding: 12px 15px 8px;
+}
+
+
+
+/* Layout configs */
+
+.buttons {
+	margin: 25px 0;
+}
+
+.row {
+	padding: 0 15px 55px 15px;
+}
+
+h2 {
+	margin-bottom: 20px!important;
+}
+
+
+
+/* Scroll to Top button */
+
+.scroll-to-top {
+	z-index: 99999;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 75%
+	height: 75%;
+	outline: none;
+	color: black;
+	opacity: .3;
+	filter: alpha(opacity=30);
+}
+
+.scroll-to-top:hover {
+	color: black;
+	text-decoration: none;
+	opacity: .5;
+	filter: alpha(opacity=50);
+}
+
+.scroll-to-top img {
+	margin: 15px;
+}
+
+
+
+/* Styling Field's Controlls */
+
+.group-controll {
+	width: 1.4em;
+	height: 1.4em;
+	margin-left: 1px;
+	border-radius: .25em;
+	background-color: #777;
+	display: inline-block!important;
+	color: white;
+}
+
+.group-controll:hover {
+	background-color: #5e5e5e;
+	color: white;
+	text-decoration: none;
+}
+
+.group-controll:focus {
+	color: white;
+	background-color: #5e5e5e;
+	outline: 1px solid #66afe9;
+	outline: -webkit-focus-ring-color auto 5px;
+	-moz-outline-radius: 5px;
+}
+
+.group-controll img {
+	height: .9em;
+	margin: .25em auto;
+	display: block;
+}
+
+.danger {
+	background-color: #d9534f;
+}
+
+.danger:hover {
+	background-color: #c9302c;
+}
+
+.danger:focus {
+	background-color: #c9302c;
+	outline: 1px solid #66afe9;
+	outline: -webkit-focus-ring-color auto 5px;
+	-moz-outline-radius: 5px;
+}
+
+.field-controll,
+.field-controll:hover {
+	color: black;
+	text-decoration: none;
+}
+
+.field-controll.danger {
+	color: #d9534f;
+}
+
+.field-controll.danger:hover {
+	color: #c9302c;
+}
+
+.field-controll img {
+	height: 1em;
+	margin-left: 5px;
+	float: left;
+	opacity: .2;
+	filter: alpha(opacity=20);
+}
+
+.field-controll img:hover {
+	opacity: .5;
+	filter: alpha(opacity=50);
+}
+
+.field-controll:focus img {
+	opacity: .5;
+	filter: alpha(opacity=50);
+	outline: 1px solid #66afe9;
+	outline: -webkit-focus-ring-color auto 5px;
+	-moz-outline-radius: 5px;
+}
+
+
+
+/* Customization for Fields Groups */
+
+.panel.panel-default {
+	margin-bottom: 0px!important;
+}
+
+.panel-heading .panel-title {
+	display: inline-block;
+}
+
+
+
+/* Drop down checkbox label under Field Controlls */
+
+.magic-checkbox + label {
+	display: inline-block!important;
+	margin-bottom: 0;
+}
+
+
+
+@media (min-width: 768px) {
+
+	/* Floating mobile dropdown menu */
+
+	.right.nav.navbar-nav {
+		float: right;
+	}
+
+
+
+	/* Responsive layout */
+
+	.row {
+		padding: 0 20% 55px 20%;
+	}
+}
+
+
+
+/* Custom styles */
+
+.faded {
+	opacity: .3;
+	filter: alpha(opacity=30);
+}
+
+
+
+/* Responsive TinyMCE */
+
+@media screen and (max-width: 515px) {
+
+	.mce-window {
+		max-width: 320px !important;
+		left: calc(50% - 160px) !important;
+	}
+	.mce-window-body {
+		max-width: 100% !important;
+		min-height: 230px !important;
+	}
+	.mce-container.mce-panel.mce-abs-layout-item,
+	.mce-container.mce-panel.mce-abs-layout-item .mce-container-body.mce-abs-layout {
+		max-width: 100% !important;
+		min-height: 190px !important;
+	}
+	.mce-flow-layout-item.mce-btn-group {
+		border-left: none !important;
+	}
+	.mce-panel,
+	.mce-panel > .mce-container-body,
+	.mce-foot,
+	.mce-foot > .mce-abs-layout {
+		max-width: 320px !important;
+	}
+	.mce-formitem {
+		width: 300px !important;
+		left: 10px !important;
+		display: block !important;
+	}
+	.mce-formitem:nth-child(2) {
+		top: 10px !important;
+	}
+	.mce-formitem:nth-child(3) {
+		top: 50px !important;
+	}
+	.mce-formitem:nth-child(4) {
+		top: 90px !important;
+	}
+	.mce-formitem:nth-child(5) {
+		top: 130px !important;
+	}
+	.mce-formitem:nth-child(6) {
+		top: 170px !important;
+	}
+	.mce-container.mce-form.mce-abs-layout-item .mce-container-body.mce-abs-layout .mce-container.mce-form.mce-abs-layout-item {
+		top: 40px !important;
+		left: 0 !important;
+		height: 160px !important;
+	}
+	.mce-formitem label {
+		width: 106px !important;
+		font-size: 13px !important;
+		left: 0px !important;
+	}
+	.mce-multiline {
+		max-width: 290px !important;
+	}
+	.mce-checkbox {
+		top: 40px !important;
+		left: 0 !important;
+	}
+	.mce-label {
+		font-size: 13px !important;
+	}
+	.mce-foot .mce-btn-has-text {
+		position: relative !important;
+		top: 0 !important;
+		left: 0 !important;
+		display: inline-block !important;
+		margin: 10px 5px !important;
+	}
+	.mce-abs-layout-item input {
+		max-width: 150px !important;
+	}
+	.mce-abs-layout-item.mce-has-open input {
+		max-width: 118px !important;
+	}
+
+}
+
+
+
+/* Styles for File Uploader */
+
+.close-iframe {
+	float: right;
+	padding: 7px;
+}
+
+
+
+/* Custom styles */
+
+.unstyle-link {
+	color: inherit;
+}
+
+.unstyle-link:hover {
+	color: inherit;
+}
+
+
+
+/* Magic-Check fixes */
+
+@-webkit-keyframes hover-color {
+
+	from {
+		border-color: #c0c0c0;
+	}
+	to {
+		border-color: #3e97eb;
+	}
+
+}
+
+.magic-radio,
+.magic-checkbox {
+	display: inline!important;
+	cursor: pointer;
+	opacity: 0;
+	width: 20px;
+	height: 20px;
+}
+
+.magic-radio:focus,
+.magic-radio:focus + label:before,
+.magic-checkbox:focus,
+.magic-checkbox:focus + label:before {
+	outline: 1px solid #66afe9;
+	outline: -webkit-focus-ring-color auto 5px;
+	-moz-outline-radius: 5px;
+}
+
+.magic-radio + label:hover:before,
+.magic-checkbox + label:hover:before {
+	-webkit-animation-duration: 0.4s;
+	-moz-animation-duration: 0.4s;
+	-o-animation-duration: 0.4s;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	-webkit-animation-name: hover-color;
+	-moz-animation-name: hover-color;
+	-o-animation-name: hover-color;
+}
+
+.magic-radio[disabled] + label:hover:before,
+.magic-checkbox[disabled] + label:hover:before {
+	-webkit-animation-name: none;
+	-moz-animation-name: none;
+	-o-animation-name: none;
+}
+
+.magic-radio:checked + label:before,
+.magic-checkbox:checked + label:before {
+	-webkit-animation-name: none;
+	-moz-animation-name: none;
+	-o-animation-name: none;
+}
+
+.magic-checkbox + label:after {
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}
